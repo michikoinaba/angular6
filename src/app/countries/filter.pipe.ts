@@ -17,10 +17,6 @@ export class FilterPipe implements PipeTransform {
    //filter - show only country names that matche the searchText   
    return items.filter( it => { 
       return it.name.toLowerCase().includes(searchText);
-     
-
     });
-  
    }
-     
 }//class

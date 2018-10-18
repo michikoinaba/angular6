@@ -10,12 +10,13 @@ import { FilterPipe} from './filter.pipe';
  providers:[FilterPipe] 
 })
 
+    //countries component
 export class CountriesComponent implements OnInit {
 
   countries$: Object;
   searchText;
     
-  //pull all countries from api in the data.service.ts  
+  //pull all countries from api. getCountries() is in the data.service.ts  
   constructor(private data: DataService) { }
 
   ngOnInit() {
