@@ -14,6 +14,8 @@ export class CountriesComponent implements OnInit {
 
   countries$: Object;
   searchText;
+    
+  //pull all countries from api in the data.service.ts  
   constructor(private data: DataService) { }
 
   ngOnInit() {

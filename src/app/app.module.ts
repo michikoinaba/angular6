@@ -6,13 +6,14 @@ import { AppComponent } from './app.component';
 import { CountriesComponent } from './countries/countries.component';
 import { FilterPipe} from './countries/filter.pipe';
 import { HttpClientModule } from '@angular/common/http';
+import { DetailsComponent } from './details/details.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     CountriesComponent, 
-    FilterPipe
+    FilterPipe, DetailsComponent
    
   ],
   imports: [

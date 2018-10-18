@@ -1,31 +1,11 @@
-<h1>Countries:</h1>
+<div align="left">
+<h1>List Of Countries:</h1>
 
-<!--
-
-<ul>
-  <li *ngFor="let country of countries$">
-    <a routerLink="/{{country.id}}">{{ country.name }}</a>
-
-   
-  </li>
-</ul>
--->
-
-<!--
-  <ul>
-    <li *ngFor="let c of countries$">
-     
-        <img src="{{c.flag}}">
-     
-      <h2>{{c.name}}</h2>
-      <p>Capital: {{c.capital}}, Region: {{c.region}}</p>
-    </li>
-  </ul>
-
--->
+<!-- show the search box to filter the list of countries -->
 <input  [(ngModel)]="searchText" placeholder="search text goes here">
 <ul>
   <li *ngFor="let c of countries$ | filter : searchText">
-    {{c.name}}
+   <a routerLink="/details/{{c.alpha2Code}}">{{ c.name }}</a>
   </li>
 </ul>
+</div>
